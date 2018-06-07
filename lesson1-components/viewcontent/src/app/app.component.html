@@ -1,0 +1,18 @@
+<app-item>
+  <h1 #h>CONTENT</h1>
+  <main>
+    MAIN CONTENT
+  </main>
+  <app-nested></app-nested>
+  <app-nested></app-nested>
+  <app-nested></app-nested>
+  <app-nested></app-nested>
+
+
+</app-item>
+
+<ng-container *ngTemplateOutlet="t1"></ng-container>
+
+<ng-template #t1>
+  <h1>Template</h1>
+</ng-template>
