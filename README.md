@@ -11,6 +11,8 @@ https://github.com/javascriptru/angularpro-20180529-2130
 
 Дополнительные Вопросы:
 
+- njectable({providedIn: Module})
+
 ##### Максим М.
 
 - В случае нескольких приложений на странице (bootstrap нескольких модулей), как лучше организовать взаимодействие между ними? Есть ли механизм вызова changeDetection сразу всех модулей, ведь ChangeDetectorRef, так же как и ApplicationRef у них разный.
