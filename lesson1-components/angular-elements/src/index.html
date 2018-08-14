@@ -9,6 +9,24 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <my-hello></my-hello>
+  <my-hello name="John">
+
+    <h1>CONTENT<h1>
+
+  </my-hello>
+  <h1></h1>
+
+  <script>
+    const customHello = document.querySelector('my-hello');
+    const students = ["Максим Максимов", "Maksims Strasinskis", "Константин Скок", "Дмитрий Аникейчик", "Андрей Алексеев", "Антон Егоров", "Игорь Сургаев", "Наталья Чикунова", "Федор Дыдыкин", "Игорь Петрашевский", "Сергей Яковщенко", "Павел Давыдов", "Александр Седых", "Ярослав Бушмакин", "А Вайдич", "Дина Большакова", "Артур Шарипов", "Андрей Алёнин", "Никита Киренков", "Ivan Pavlov", "Дарья Горских"];
+    let i = 1;
+    setInterval(() => {
+      customHello.setAttribute('name', students[i++ % students.length]);
+    }, 500);
+
+    customHello.addEventListener('clicked', (event) => {
+      document.querySelector('h1').innerHTML = event.detail;
+    })
+  </script>
 </body>
 </html>

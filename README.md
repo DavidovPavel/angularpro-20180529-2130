@@ -11,7 +11,16 @@ https://github.com/javascriptru/angularpro-20180529-2130
 
 Дополнительные Вопросы:
 
-- njectable({providedIn: Module})
+- injectable({providedIn: Module}) - https://github.com/angular/angular/issues/24082
+- without doCheck - https://stackblitz.com/edit/angular-cez5ej?file=src%2Fapp%2Fone%2Fone.component.ts
+- изменение формата named outlets url (nope, source) - https://github.com/angular/angular/blob/master/packages/router/src/url_handling_strategy.ts
+- forRoot/forChild - https://stackoverflow.com/questions/40498081/routermodule-forrootroutes-vs-routermodule-forchildroutes
+- validators.compose() vs array validators - https://angular.io/api/forms/Validators#compose
+- combineLatest pipable?  - https://www.learnrxjs.io/operators/combination/combinelatest.html
+- живой пример на flatMap
+- инициализировать стэйт ngrx через SSR - https://github.com/ngrx/platform/issues/101
+- ngrx/router
+- unit-tests how to run one test - fit() / fdescribe()
 
 ##### Максим М.
 
@@ -37,6 +46,31 @@ https://github.com/javascriptru/angularpro-20180529-2130
 
 - Оптимизация производительности. Как работать с большими массивами данных, как построить список из сотен или тысяч компонентов, не обрекая пользователя на страдания. Пример элемента такого списка — превью товара (без фото) с несколькими действиями.
 
+##### Александр Седых
+
+- Динамическая темизация приложения при использовании в проекте scss, например. Лучшие практики?
+
+- Повторное использование компонента в дереве ленивых модулей. Есть ли варианты, кроме вынесения этого компонента в отдельный модуль и импорта его, в последствии, во все ленивые модули?
+
+##### Константин Скок
+
+- JIT для "чайников"
+- AOT для "чайников"
+- Отличия JIT от AOT и почему для prod рекомендуетя использовать именно AOT - https://angular.io/guide/aot-compiler#why-compile-with-aot
+
+
+
+
+Дополнительно
+
+- RouteReuseStrategy
+- IVY ChangeDetection
+
+
+
+
+
+
 Первое занятие - 5.06
 
 
@@ -48,3 +82,7 @@ https://github.com/javascriptru/angularpro-20180529-2130
 - сделать pipe, который будет показывать timeAgo
 
 - завернуть форму регистрации пользователя (стандартные поля) в angular-element. Сделать параметром: показывать минимальную форму или расширенную. Считывать событие успешного заполнения/отправки формы и ошибок формы.
+
+- сделать "светофор" FormCotrol и к нему валидатор (красный - invalid)
+
+- сделать свой Observable класс/конструктор
